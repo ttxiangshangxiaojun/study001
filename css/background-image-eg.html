@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*方案1:*/
+      .image-eg{
+          width: 500px;
+          background-color: pink;
+      }
+      .image-eg .bg-s{
+          height: 100%;/*很重要需要跟父元素的高度相等*/
+          background-repeat:no-repeat;
+          background-image: url(images/image-small.jpg);
+          background-position: 10px center;
+          padding: 15px 50px;
+      }
+      /*方案2：*/
+      .icon{
+          height: 200px;
+          width: 600px;
+          background-color: pink;
+          background-image: url(images/image-small.jpg);
+          background-repeat: no-repeat;
+          background-position: 10px center;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="image-eg">
+        <div class="bg-s">
+            我是一个小图标。。。这种居中对齐的图标还是不错的。
+            方案：高度跟父元素的高度相同、让背景小图片设置background-position属性
+        </div>
+    </div>
+    <!--<div class="icon">
+              我是一个小图标。。。这种居中对齐的图标还是不错的。 方案：让背景小图片设置background-position属性
+    </div>-->
+</body>
+
+</html>
